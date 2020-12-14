@@ -12,11 +12,6 @@ class ComplexNum {
         return (this.re == num.re) && (this.im == num.im);
     }
 
-    void add(ComplexNum num) {
-        this.im = this.im + num.im;
-        this.re = this.re + num.re;
-    }
-
     String toStringRep() {
         return this.im == 0
             // Special case: real number.
